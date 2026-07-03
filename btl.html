@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trại Huấn Luyện & Cứu Trợ Thú Cưng Chuyên Nghiệp</title>
+    <link rel="stylesheet" href="btl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-shield-dog"></i> <span>Trại Huấn Luyện Thú Cưng</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#home">Trang Chủ</a>
+            <a href="#services">Dịch Vụ</a>
+            <a href="#adopt">Nhận Nuôi</a>
+            <a href="#testimonials">Đánh Giá</a>
+            <a href="#contact" class="btn-contact">Liên Hệ Ngay</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-tag">Hệ Thống Đạt Chuẩn Quốc Tế</span>
+            <h1>Kiến Tạo Kỷ Luật & Khơi Dậy Yêu Thương</h1>
+            <p>Trung tâm hàng đầu về cứu trợ y tế, chăm sóc sức khỏe toàn diện và huấn luyện hành vi thú cưng theo giáo trình chuyên nghiệp.</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn-primary">Xem Khóa Huấn Luyện</a>
+                <a href="#adopt" class="btn-secondary">Quỹ Cứu Trợ & Nhận Nuôi</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS SECTION -->
+    <section class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h2>15+</h2>
+                <p>Năm Kinh Nghiệm</p>
+            </div>
+            <div class="stat-item">
+                <h2>2,500+</h2>
+                <p>Thú Cưng Tốt Nghiệp</p>
+            </div>
+            <div class="stat-item">
+                <h2>100%</h2>
+                <p>Chuyên Viên Chứng Chỉ Quốc Tế</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="services-section">
+        <div class="section-header">
+            <h2 class="section-title">Dịch Vụ Đẳng Cấp & Chuyên Nghiệp</h2>
+            <p class="section-subtitle">Giải pháp toàn diện cho người bạn bốn chân của bạn</p>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="icon-wrapper"><i class="fa-solid fa-graduation-cap"></i></div>
+                <h3>Huấn Luyện Kỷ Luật</h3>
+                <p>Khóa học từ cơ bản đến nâng cao: đi vệ sinh đúng chỗ, sửa các tật xấu như sủa bậy, cắn phá, hung dữ.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-wrapper"><i class="fa-solid fa-kit-medical"></i></div>
+                <h3>Cứu Trợ & Y Tế 24/7</h3>
+                <p>Đội ngũ bác sĩ thú y túc trực cứu hộ, điều trị chấn thương và chăm sóc dinh dưỡng đặc biệt cho các bé gặp nạn.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-wrapper"><i class="fa-solid fa-hotel"></i></div>
+                <h3>Nội Trú Cao Cấp</h3>
+                <p>Không gian lưu trú sạch sẽ, chuẩn năm sao với camera giám sát 24/7 giúp bạn an tâm khi vắng nhà.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADOPT SECTION -->
+    <section id="adopt" class="adopt-section">
+        <div class="section-header">
+            <h2 class="section-title">Tìm Kiếm Người Bạn Đồng Hành</h2>
+            <p class="section-subtitle">Các bé đã hoàn thành khóa huấn luyện hành vi và sẵn sàng về nhà mới</p>
+        </div>
+
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">Tất Cả Thú Cưng</button>
+            <button class="filter-btn" data-filter="dog">Chó Huấn Luyện</button>
+            <button class="filter-btn" data-filter="cat">Mèo Cứu Trợ</button>
+        </div>
+
+        <div class="pet-grid">
+            <div class="pet-card" data-category="dog">
+                <div class="pet-img">
+                    <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=500" alt="Chú chó Golden">
+                    <span class="badge status-trained">Tốt Nghiệp Loại Giỏi</span>
+                </div>
+                <div class="pet-info">
+                    <h3>Cậu Vàng (Golden Retriever)</h3>
+                    <div class="pet-meta">
+                        <span><i class="fa-solid fa-calendar"></i> 12 Tháng Tuổi</span>
+                        <span><i class="fa-solid fa-venus-mars"></i> Đực</span>
+                    </div>
+                    <p class="pet-desc">Tính cách năng động, phản xạ cực tốt với các khẩu lệnh, thân thiện với trẻ em.</p>
+                    <button class="btn-adopt-now" onclick="openModal('Cậu Vàng (Golden)')">Đăng Ký Nhận Nuôi</button>
+                </div>
+            </div>
+
+            <div class="pet-card" data-category="cat">
+                <div class="pet-img">
+                    <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=500" alt="Mèo Miu">
+                    <span class="badge status-care">Đang Phục Hồi Y Tế</span>
+                </div>
+                <div class="pet-info">
+                    <h3>Miu Miu (Mèo Thể)</h3>
+                    <div class="pet-meta">
+                        <span><i class="fa-solid fa-calendar"></i> 6 Tháng Tuổi</span>
+                        <span><i class="fa-solid fa-venus-mars"></i> Cái</span>
+                    </div>
+                    <p class="pet-desc">Được cứu trợ từ một khu chung cư cũ, hiện tại sức khỏe đã ổn định, rất quấn người.</p>
+                    <button class="btn-adopt-now" onclick="openModal('Miu Miu')">Đăng Ký Nhận Nuôi</button>
+                </div>
+            </div>
+
+            <div class="pet-card" data-category="dog">
+                <div class="pet-img">
+                    <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=500" alt="Poodle">
+                    <span class="badge status-trained">Đã Hoàn Thành Khóa Kỷ Luật</span>
+                </div>
+                <div class="pet-info">
+                    <h3>Xù (Poodle)</h3>
+                    <div class="pet-meta">
+                        <span><i class="fa-solid fa-calendar"></i> 2 Năm Tuổi</span>
+                        <span><i class="fa-solid fa-venus-mars"></i> Cái</span>
+                    </div>
+                    <p class="pet-desc">Thông minh bậc nhất, đã có chứng chỉ đi vệ sinh đúng nơi quy định, không sủa bậy.</p>
+                    <button class="btn-adopt-now" onclick="openModal('Xù (Poodle)')">Đăng Ký Nhận Nuôi</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="section-header">
+            <h2 class="section-title">Khách Hàng Nói Về Chúng Tôi</h2>
+            <p class="section-subtitle">Sự hài lòng của bạn là minh chứng cho chất lượng huấn luyện</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>"Chú chó Poodle nhà tôi từng cắn nát 3 bộ sofa, sau 2 tháng gửi gắm tại Trại Huấn Luyện Thú Cưng, giờ bé vô cùng ngoan ngoãn và biết nghe lời."</p>
+                <div class="user-info">
+                    <h4>Nguyễn Hoàng Long</h4>
+                    <span>Chủ nuôi bé Xù</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>"Thủ tục nhận nuôi ở đây cực kỳ minh bạch và chuyên nghiệp. Các bé mèo cứu trợ được tiêm phòng và chăm sóc y tế rất kỹ trước khi bàn giao."</p>
+                <div class="user-info">
+                    <h4>Trần Thu Thủy</h4>
+                    <span>Chủ nuôi bé Miu Miu</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3><i class="fa-solid fa-shield-dog"></i> Trại Huấn Luyện Thú Cưng</h3>
+                <p>Tổ chức chính quy đi đầu trong công tác huấn luyện hành vi nâng cao và bảo hộ động vật tại Việt Nam.</p>
+                <div class="contact-details">
+                    <p><i class="fa-solid fa-location-dot"></i> KĐT EcoPark, Hà Nội, Việt Nam</p>
+                    <p><i class="fa-solid fa-phone"></i> Hotline Kỹ Thuật: 1900 8888</p>
+                    <p><i class="fa-solid fa-envelope"></i> trogiup@traihuanluyenthucung.com</p>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Hệ Thống Tiện Ích</h4>
+                <a href="#home">Tổng quan trung tâm</a>
+                <a href="#services">Bảng giá khóa học</a>
+                <a href="#adopt">Thủ tục bảo trợ</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Trại Huấn Luyện Thú Cưng. Hệ thống quản trị chuyên nghiệp.</p>
+        </div>
+    </footer>
+
+    <!-- MODAL ĐĂNG KÝ -->
+    <div id="adoptModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Hồ Sơ Đăng Ký Bảo Trợ</h2>
+            <p>Bé đang chọn: <strong id="modal-pet-name">...</strong></p>
+            <form id="adoptForm" onsubmit="submitForm(event)">
+                <input type="text" placeholder="Họ và tên người đăng ký" required>
+                <input type="tel" placeholder="Số điện thoại chính chủ" required>
+                <textarea placeholder="Vui lòng chia sẻ về không gian sống hiện tại của bạn và kinh nghiệm nuôi thú cưng để hội đồng xét duyệt..." rows="4" required></textarea>
+                <button type="submit" class="btn-submit">Xác Nhận Gửi Hồ Sơ</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="btl.js"></script>
+</body>
+</html>
